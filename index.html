@@ -1,51 +1,375 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Paola Esquivel</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
-    
-  <div class="text-center mt-3">
-    <div class="alert alert-dark" role="alert">
-      <h1>Data Academy <br/> Portafolio Paola Esquivel</h1>
-    </div>
-  </div>
-
- <div class="container d-flex justify-content-center align-items-center">
-    <div class="row row-cols-1 row-cols-md-3">
-        <div class="card mt-3 text-bg-info me-3 mb-3 border-primary">
-        <h5 class="card-header">Primer Tarea</h5>
-            <div class="card-body text-bg-primary mb-2">
-                <h5 class="card-title">Reto de ventas</h5>
-                <p class="card-text">Esta tarea consiste en un reto donde se clasificaran las ventas como altas o bajas de acuerdo a su valor.</p>
-                  <a target="_blank" rel="noopener noreferrer" href="https://paocode.github.io/portafolio/primer-tarea.html" class="btn btn-info">Link Tarea</a>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Academia de Data - Paola Esquivel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#inicio">
+                <i class="fas fa-chart-bar text-primary"></i> 
+                <span class="ms-2">Academia de Data</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tareas">Tareas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certificados">Certificados</a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
 
-      <div class="card mt-3 text-bg-info mb-3 border-primary">
-        <h5 class="card-header">Segunda Tarea</h5>
-            <div class="card-body text-bg-primary mb-2">
-                <h5 class="card-title">Mini Prática Pandas & Numpy </h5>
-                <p class="card-text">Esta tarea consiste en una práctica donde se utilizaran las librerias de Pandas y Numpy para analizar datos de un archivo CSV.</p>
-                  <a target="_blank" rel="noopener noreferrer" href="https://paocode.github.io/portafolio/segunda_tarea_fundamentos_csv_pandas_numpy.html" class="btn btn-info">Link Tarea</a>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-3">
+                        Academia de Data
+                    </h1>
+                    <h2 class="h3 text-muted mb-4">
+                        <span class="fw-bold">Paola Esquivel</span>
+                    </h2>
+                    <p class="lead mb-4">
+                        Portafolio de tareas y proyectos de análisis de datos, 
+                        limpieza de información y visualización de insights.
+                    </p>
+                    <div class="d-flex gap-3 justify-content-center flex-wrap">
+                        <a href="#tareas" class="btn btn-primary">
+                            <i class="fas fa-tasks me-2"></i>Ver Tareas
+                        </a>
+                        <a href="#certificados" class="btn btn-light text-primary">
+                            <i class="fas fa-certificate me-2"></i>Ver Certificados
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-      <div class="card mt-3 text-bg-info mb-3 border-primary">
-        <h5 class="card-header">Tercer Tarea</h5>
-            <div class="card-body text-bg-primary mb-2">
-                <h5 class="card-title"> Limpieza datos Netflix títulos </h5>
-                <p class="card-text">Esta tarea consiste en realizar la revisión, auditoria y limpieza de la data de los titulos de Netflix.</p>
-                  <a target="_blank" rel="noopener noreferrer" href="https://paocode.github.io/portafolio/tercer_tarea_netflix_datos_limpieza.html" class="btn btn-info">Link Tarea</a>
+    <!-- Tareas Section -->
+    <section id="tareas" class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-2">
+                        <i class="fas fa-tasks text-primary"></i> Mis Tareas
+                    </h2>
+                    <p class="text-muted">
+                        Proyectos y trabajos desarrollados durante la academia
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Tarea 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm card-hover">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0">
+                                <i class="fas fa-file-csv me-2"></i>Primera Tarea
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-muted">
+                                Reto de clasificación de ventas. Análisis básico de datos y clasificación.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-success">Python</span>
+                                <span class="badge bg-info">Fundamentos</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-top-0">
+                            <a href="https://paocode.github.io/portafolio/primer-tarea.html" class="btn btn-sm btn-primary w-100">
+                                <i class="fas fa-eye me-2"></i>Ver Tarea
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarea 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm card-hover">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0">
+                                <i class="fas fa-database me-2"></i>Segunda Tarea
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-muted">
+                                Fundamentos, CSV, Pandas y NumPy. Mini práctica con análisis de datos.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-success">Python</span>
+                                <span class="badge bg-warning text-dark">Pandas</span>
+                                <span class="badge bg-info">NumPy</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-top-0">
+                            <a href="https://paocode.github.io/portafolio/segunda_tarea_fundamentos_csv_pandas_numpy.html" class="btn btn-sm btn-primary w-100">
+                                <i class="fas fa-eye me-2"></i>Ver Tarea
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarea 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm card-hover">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0">
+                                <i class="fas fa-broom me-2"></i>Tercera Tarea
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-muted">
+                                Limpieza de datos Netflix. Auditoría y transformación de información.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-success">Python</span>
+                                <span class="badge bg-danger">Netflix</span>
+                                <span class="badge bg-secondary">Data Cleaning</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-top-0">
+                            <a href="https://paocode.github.io/portafolio/tercer_tarea_netflix_datos_limpieza.html" class="btn btn-sm btn-primary w-100">
+                                <i class="fas fa-eye me-2"></i>Ver Tarea
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarea 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm card-hover">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0">
+                                <i class="fas fa-chart-pie me-2"></i>Cuarta Tarea
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-muted">
+                                Análisis avanzado con visualizaciones. Exploración y patrones en datos.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-success">Python</span>
+                                <span class="badge bg-info">Visualización</span>
+                                <span class="badge bg-warning text-dark">Análisis</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-top-0">
+                            <a href="#" class="btn btn-sm btn-primary w-100">
+                                <i class="fas fa-eye me-2"></i>Ver Tarea
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarea 5 (comentada temporalmente)
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm card-hover">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0">
+                                <i class="fas fa-project-diagram me-2"></i>Quinta Tarea
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-muted">
+                                Proyecto integrador. Combinación de todas las habilidades aprendidas.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-success">Python</span>
+                                <span class="badge bg-warning text-dark">Pandas</span>
+                                <span class="badge bg-info">NumPy</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-top-0">
+                            <a href="#" class="btn btn-sm btn-primary w-100">
+                                <i class="fas fa-eye me-2"></i>Ver Tarea
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                Tarea 6 (comentada temporalmente)
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm card-hover">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0">
+                                <i class="fas fa-line-chart me-2"></i>Sexta Tarea
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-muted">
+                                Análisis comparativo. Casos de estudio y benchmarking de métodos.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-success">Python</span>
+                                <span class="badge bg-info">Análisis Comparativo</span>
+                                <span class="badge bg-secondary">Estadística</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-top-0">
+                            <a href="#" class="btn btn-sm btn-primary w-100">
+                                <i class="fas fa-eye me-2"></i>Ver Tarea
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                -->
             </div>
         </div>
-      
-    </div>
-</div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+    <!-- Certificados Section -->
+    <section id="certificados" class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-2">
+                        <i class="fas fa-certificate text-primary"></i> Certificados y Cursos
+                    </h2>
+                    <p class="text-muted">
+                        Certificados obtenidos durante la formación en Data
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Certificado 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm card-hover overflow-hidden">
+                        <img src="https://via.placeholder.com/300x200/667eea/ffffff?text=Python+Basico" class="card-img-top" alt="Getting into the Serverless
+                                Mindset">
+                        <div class="card-body text-center py-3">
+                            <h5 class="card-title">AWS Training & Certification</h5>
+                            <p class="card-text text-muted small">
+                                Getting into the Serverless
+                                Mindset
+                            </p>
+                            <small class="text-secondary">Completado</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificado 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm card-hover overflow-hidden">
+                        <img src="https://via.placeholder.com/300x200/764ba2/ffffff?text=Pandas+NumPy" class="card-img-top" alt="AWS Well-Architected Foundations">
+                        <div class="card-body text-center py-3">
+                            <h5 class="card-title">AWS Training & Certification</h5>
+                            <p class="card-text text-muted small">
+                                AWS Well-Architected Foundations
+                            </p>
+                            <small class="text-secondary">Completado</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificado 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm card-hover overflow-hidden">
+                        <img src="https://via.placeholder.com/300x200/0dcaf0/ffffff?text=SQL+Avanzado" class="card-img-top" alt="Data Engineering on AWS - Foundations">
+                        <div class="card-body text-center py-3">
+                            <h5 class="card-title">AWS Training & Certification</h5>
+                            <p class="card-text text-muted small">
+                                Data Engineering on AWS - Foundations
+                            </p>
+                            <small class="text-secondary">En curso</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificado 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm card-hover overflow-hidden">
+                        <img src="https://via.placeholder.com/300x200/198754/ffffff?text=Visualizacion" class="card-img-top" alt="AWS Cloud Practitioner Essentials">
+                        <div class="card-body text-center py-3">
+                            <h5 class="card-title">AWS Training & Certification</h5>
+                            <p class="card-text text-muted small">
+                                AWS Cloud Practitioner Essentials
+                            </p>
+                            <small class="text-secondary">En curso</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Resumen -->
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="alert alert-light border-2 border-primary p-4">
+                        <div class="row text-center">
+                            <div class="col-md-4 mb-3 mb-md-0">
+                                <h4 class="fw-bold text-primary">4</h4>
+                                <p class="text-muted mb-0">Tareas Completadas</p>
+                            </div>
+                            <div class="col-md-4 mb-3 mb-md-0">
+                                <h4 class="fw-bold text-primary">2</h4>
+                                <p class="text-muted mb-0">Certificados</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h4 class="fw-bold text-primary">100%</h4>
+                                <p class="text-muted mb-0">Dedicación</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <h6 class="fw-bold mb-2">
+                        <i class="fas fa-chart-bar me-2"></i>Academia de Data
+                    </h6>
+                    <p class="small text-muted">
+                        Portafolio de tareas y proyectos de análisis de datos
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="text-white text-decoration-none me-3" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="text-white text-decoration-none me-3" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-white text-decoration-none" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3">
+            <p class="small text-center text-muted mb-0">
+                &copy; 2026 <span class="fw-bold">Paola Esquivel</span> - Academia de Data | Todos los derechos reservados
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
 </html>
